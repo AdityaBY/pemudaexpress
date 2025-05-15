@@ -15,13 +15,6 @@ document.addEventListener("click", function (e) {
 const sliderItems = document.querySelectorAll(".slider-item");
 let sliderActive = 1;
 
-//  menu icon
-// const menuIcon = document.getElementById("menu-icon");
-// const menuList = document.getElementById("menu-list");
-// menuIcon.addEventListener("click", () => {
-//   menuList.classList.toggle("hidden");
-// });
-
 // slider
 if (sliderItems) {
   sliderItems.forEach((slider, index) => {
@@ -49,38 +42,6 @@ if (sliderItems) {
   }, 5000);
 }
 
-// Initialize Swiper
-
-// const swiper = new Swiper(".slider-wrapper", {
-//   loop: true,
-//   grabCursor: true,
-//   spaceBetween: 10,
-
-//   // If we need pagination
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//     dynamicBullets: true,
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints: {
-//     0: {
-//       slidesPerview: 1,
-//     },
-//     758: {
-//       slidesPerview: 2,
-//     },
-//     1366: {
-//       slidesPerview: 3,
-//     },
-//   },
-// });
 const swiper = new Swiper(".slider-wrapper", {
   loop: true,
   grabCursor: true,
